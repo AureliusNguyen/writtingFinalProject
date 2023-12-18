@@ -8,15 +8,15 @@ body {
     flex-direction: column;  /* Changed to column so that elements stack vertically */
     justify-content: center;
     align-items: center;
-    background-color: #60dfcd;
-    background-image: linear-gradient(315deg, #60dfcd 0%, #1e9afe 74%);    
+    background-color: #0a6df7;
+    background-image: linear-gradient(315deg, #8f07b4 0%, #f775ea 66%);    
 }
 
 .navbar {
     font-weight: bold;
     width: 100%;  /* Full width of the screen */
     height: 90px;  /* Arbitrary height, adjust as needed */
-    background: linear-gradient(to bottom, #80FFFF, #B0FFFF);
+    background: linear-gradient(to bottom, #0457f2, #B0FFFF);
     color: #000;  /* Text color */
     display: flex;
     align-items: center;  /* Vertically center content */
@@ -26,6 +26,7 @@ body {
     position: absolute;
     font-size: 2em;
     z-index: 1000;  /* Ensures the navbar is always on top */
+    border-bottom: cyan;
 }
 
 .essay-container {
@@ -71,10 +72,11 @@ p {
 
 
 .centered-image {
-    width: 400px; 
-    height: 300px; 
-    object-fit: cover; 
-    margin: 0 auto; 
+    max-width: 100%; /* Ensures image is no wider than the container */
+    max-height: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the image is fully visible within the frame */
+    margin-top: 20px; /* Adds space above the image */
+    margin-bottom: 20px; /* Adds space below the image */
 }
 
 
